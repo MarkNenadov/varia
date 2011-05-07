@@ -48,6 +48,14 @@ public class Gadhnami {
 		return m.find();
 	}
 	
+	public static Map build_hash_map(String name, boolean is_gadaffi)
+	{
+		Map root = new HashMap();
+		root.put("name", name);
+		root.put("is_gadaffi", new Boolean(is_gadaffi).toString());
+		
+	}
+	
 	public static void main(String[] args) 
 	{
 		tpl_folder = new File(tpl_folder_name);
@@ -68,13 +76,9 @@ public class Gadhnami {
 			System.out.println("Can't open gadhnami template");
 		}
 		
-		Map root = new HashMap();
-		root.put("name", working_name);
-		root.put("is_gadaffi", new Boolean(isThisNameGadaffi(working_name)).toString());
-		
 		Writer out = new OutputStreamWriter(System.out);
 		try {
-			tpl.process(root, out);
+			tpl.process(build_hash_map(working_name, isThisNameGadaffi(working_name)), out);
 		}
 		catch (TemplateException e) {
 			System.out.println("tpl.process failed TemplateException");
@@ -93,4 +97,3 @@ public class Gadhnami {
 		
 	}
 }
-
