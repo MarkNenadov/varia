@@ -16,7 +16,8 @@ C Code
 Java Code
 * allofmydays - An absurd simulation demonstration java.util.Random
 * gadhnami - Determines whether a particular name is a variant of the name of fearless
-             and crazy Libyan leader Gadaffi
+             and crazy Libyan leader Gadaffi (a simplified version and
+	     a version that uses Freemarker to output an HTML page)
 
 Python
 
