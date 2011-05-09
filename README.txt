@@ -21,6 +21,7 @@ Java Code
 
 Python
 
+* intplay.py - Some fun integer functions (a bit map sort and a random integer generator)
 * mongo.py - A simple demonstration of using pymongo to access mongodb
 * icalendar_example.py - An incomplete attempt at wrapping the icalendar library
 * SermonAudioParser_example.py - A demonstration of the UniversalFeedParser being used on 
