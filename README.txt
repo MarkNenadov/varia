@@ -14,7 +14,8 @@ C Code
 * 5factoids.c - Five factoids demonstrating simple Linux system lookups
 
 Java Code
-* allofmydays - An absurd simulation demonstration java.util.Random
+* allofmydays - An absurd simulation demonstration java.util.Random (both a console version
+		and a version demonstrating javax.swing.JScrollPane)
 * gadhnami - Determines whether a particular name is a variant of the name of fearless
              and crazy Libyan leader Gadaffi (a simplified version and
 	     a version that uses Freemarker to output an HTML page)
