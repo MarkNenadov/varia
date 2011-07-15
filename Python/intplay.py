@@ -3,14 +3,14 @@
 intplay.py
 
 A couple fun integer functions, one to do a duplicate-ignoring bit map
-sort on integers (given a list of integers and a max size). The other to 
+sort on integers (given a list of integers and a max size). The other to
 generate random integers (given amount and max size)
 
 In __main__ we do a test and compare the speed with Python's built in
-sort() function. 
+sort() function.
 
 (On my computer at least) With Python 2.7, bit_map_int_sort()
-tends to beat out Python sort() by about .1 seconds on a list of 2mil 
+tends to beat out Python sort() by about .1 seconds on a list of 2mil
 integers.
 
 However, in Python 3.2 bit_map_int_sort() seems to pull further ahead,
@@ -20,7 +20,7 @@ AUTHOR
 
 Mark J. Nenadov (2011)
 * Essex, Ontario
-* Email: <marknenadov@gmail.com> 
+* Email: <marknenadov@gmail.com>
 
 LICENSING
 
@@ -35,7 +35,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with this program. If not, see <http://www.gnu.org/licenses/>. 
+along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 """
 
@@ -45,18 +45,14 @@ import time
 def bit_map_int_sort(ints, largest_value):
     """ bit_map_int_sort()
 
-    Sort a list of integers (ignoring duplicates) using a bit map and return 
-    the results. Based on the bit map sort that is discussed in Programing
-    Pearls by Jon Bentley
+Sort a list of integers (ignoring duplicates) using a bit map and return
+the results. Based on the bit map sort that is discussed in Programing
+Pearls by Jon Bentley
 
-    """
-    bit_map = []
+"""
+    bit_map = [0]*largest_value
 
     bit_map_range = range(largest_value)
-
-    # zero out appropriately sized bit map
-    for x in bit_map_range:
-        bit_map.append(0)
 
     # generate bit map
     for x in ints:
@@ -73,8 +69,8 @@ def bit_map_int_sort(ints, largest_value):
 def get_random_ints(num, max_size):
     """ get_random_ints ()
 
-    return n integers with a maximum size of n
-    """
+return n integers with a maximum size of n
+"""
 
     ints = []
     for x in range(num-1):
@@ -110,7 +106,7 @@ if __name__ == "__main__":
     
     # output seconds it took
 
-    print( "With bit_map_int_sort() it took " + str(stop1-start1)  \
+    print( "With bit_map_int_sort() it took " + str(stop1-start1) \
             + " seconds to sort " + str(AMOUNT) + \
             " integers that have values up to " + str(MAX_SIZE))
     print( "With Python's built-in sort() it took " + str(stop2-start2) + \
