@@ -13,6 +13,7 @@ C Code
 * my_life.c -  An absurd simulation demonstrating rand() and srand()
 * 5factoids.c - Five factoids demonstrating simple Linux system lookups
 
+
 Java Code
 * allofmydays - An absurd simulation demonstration java.util.Random (both a console version
 		and a version demonstrating javax.swing.JScrollPane)
@@ -33,6 +34,11 @@ Python
 * zip_shakedown.py - Take zip files in a specific path and output their contents into a
   		   text file
 
+Ruby
+
+* intplay.rb - Some fun integer functions (a bit map sort and a random integer generator)
+
+* intplay_oo.rb - oo version of intplay.rb
 
 
 AUTHOR
