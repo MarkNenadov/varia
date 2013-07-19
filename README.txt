@@ -1,4 +1,4 @@
-Varia - Various and sundry unsorted pieces of code.
+Varia - Various and sundry unsorted pieces of Python, Java, C, and Ruby code.
 
 INTRODUCTION
 
@@ -16,10 +16,12 @@ C Code
 
 Java Code
 * allofmydays - An absurd simulation demonstration java.util.Random (both a console version
-		and a version demonstrating javax.swing.JScrollPane)
+	   			and a version demonstrating javax.swing.JScrollPane)
 * gadhnami - Determines whether a particular name is a variant of the name of fearless
              and crazy Libyan leader Gadaffi (a simplified version and
-	     a version that uses Freemarker to output an HTML page)
+	    	 a version that uses Freemarker to output an HTML page)
+* JxlDemo  - A demonstration of how to do simple Excel read/write via the Java Excel
+			 API (requires junit and the jxl library: http://jexcelapi.sourceforge.net/ )
 
 Python
 
@@ -43,7 +45,7 @@ Ruby
 
 AUTHOR
 
-Mark J. Nenadov (2011)
+Mark J. Nenadov
 * Essex, Ontario
 * Email: <marknenadov@gmail.com> 
 
