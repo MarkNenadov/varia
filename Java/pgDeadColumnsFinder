@@ -1,0 +1,158 @@
+/*
+
+pgDeadColumnsFinder
+
+A Java console app for finding columns that are empty or filled with null values in a PostgreSQL database.
+
+Note: This requires the PostgreSQL JDBC driver
+
+AUTHOR
+
+Mark J. Nenadov (2013)
+* Essex, Ontario
+* Email: <marknenadov@gmail.com>
+
+LICENSING
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version
+
+This program is distributed in the hope that it will be useful
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+*/
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
+
+public class pgDeadColumnsFinder {
+    private static boolean DEBUG_MODE = false;
+    private static String HOST = "localhost";
+    private static String DATABASE = "databasename";
+    private static String USERNAME = "username";
+    private static String PASSWORD = "password";
+
+    private static Connection postgresConnection;
+
+    public static void main(String[] args) {
+        String url = "jdbc:postgresql://" + HOST + "/" + DATABASE;
+        Properties props = new Properties();
+        props.setProperty("user", USERNAME);
+        props.setProperty("password", PASSWORD);
+        try {
+            postgresConnection = DriverManager.getConnection(url, props);
+            if (DEBUG_MODE) {
+                System.out.println( "Scanning postgresql database [" + DATABASE + "] for columns that are empty or entirely NULL" );
+            }
+
+            List<String> emptyOrEntirelyNullColumns = new ArrayList<String>();
+
+            List<String> tablesInDatabase = getTablesInDatabase();
+
+            for (String tableName: tablesInDatabase) {
+                if (DEBUG_MODE) {
+                    System.out.println( "Iterating through table: " + tableName );
+                }
+                for (String columnName: getColumnsInTable(tableName)) {
+                    if (DEBUG_MODE) {
+                        System.out.println( "Iterating through column [" + columnName + "] in table [" + tableName + "]" );
+                    }
+                    if ( !doesColumnHaveNonNullEntries(tableName, columnName)) {
+                        emptyOrEntirelyNullColumns.add(tableName + " => " + columnName);
+                    }
+                }
+            }
+
+            postgresConnection.close();
+
+            System.out.println( "Found [" + emptyOrEntirelyNullColumns.size() + "] empty or entirely null columns" );
+
+            if ( emptyOrEntirelyNullColumns.size() > 0 ) {
+                System.out.println( "Here's a list:" );
+                for ( String value: emptyOrEntirelyNullColumns ) {
+                    System.out.println( value );
+                }
+            }
+
+        } catch ( Exception e ) {
+            e.printStackTrace();
+        }
+    }
+
+    /* Helpers */
+    private static boolean doesColumnHaveNonNullEntries(String tableName, String columnName) throws Exception {
+        Statement statement = postgresConnection.createStatement();
+        ResultSet resultSet = statement.executeQuery(getQueryToReturnNotNullCount(tableName, columnName));
+        resultSet.next();
+        return resultSet.getInt( 1 ) != 0;
+    }
+
+    private static List<String> getColumnsInTable(String tableName) throws SQLException {
+        List<String> columnNames = new ArrayList<String>();
+
+        Statement statement = postgresConnection.createStatement();
+        ResultSet resultSet = statement.executeQuery(getQueryToListAllColumnsForATable(tableName));
+
+        while (resultSet.next() ) {
+            columnNames.add(resultSet.getString(1));
+        }
+        resultSet.close();
+        statement.close();
+
+        return columnNames;
+    }
+
+    private static List<String> getTablesInDatabase() throws SQLException {
+        List<String> tableNames = new ArrayList<String>();
+
+        Statement statement = postgresConnection.createStatement();
+        ResultSet resultSet = statement.executeQuery(getQueryToListAllTables());
+
+        while (resultSet.next()) {
+            tableNames.add(resultSet.getString(1));
+        }
+
+        resultSet.close();
+        statement.close();
+
+        return tableNames;
+    }
+
+    private static String getQueryToListAllTables() {
+        String sql = "SELECT table_name ";
+        sql += "FROM information_schema.tables ";
+        sql += "WHERE table_type = 'BASE TABLE' ";
+        sql += "  AND table_schema = 'public' ";
+        sql += "ORDER BY table_name";
+
+        return sql;
+    }
+
+    private static String getQueryToListAllColumnsForATable( String tableName ) {
+	 String sql = "SELECT column_name ";
+        sql += "FROM information_schema.columns ";
+        sql += "WHERE table_name = '" + tableName + "' ";
+        sql += "  AND table_schema = 'public' ";
+        sql += "ORDER BY column_name";
+
+		return sql;
+    }
+
+    private static String getQueryToReturnNotNullCount( String tableName, String columnName ) {
+        String sql = "SELECT count(*) ";
+        sql += "FROM " + tableName + " ";
+        sql += "WHERE " + columnName + " IS NOT NULL";
+
+	  return sql;
+    }
+}
+
