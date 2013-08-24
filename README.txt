@@ -25,16 +25,15 @@ Java Code
 
 Python
 
+* pycrypto_hashing.py - A simple example of the using hashing in PyCrypto
 * intplay.py - Some fun integer functions (a bit map sort and a random integer generator)
 * mongo.py - A simple demonstration of using pymongo to access mongodb
 * icalendar_example.py - An incomplete attempt at wrapping the icalendar library
 * SermonAudioParser_example.py - A demonstration of the UniversalFeedParser being used on 
                                  SermonAudio.com's feeds
 * StringValidator.py - A string validator class
-* createpdf.py -  A old, scrappy wrapper for PDFlib PDF generation (I recommend reportlab 
-                  instead nowadays)
-* zip_shakedown.py - Take zip files in a specific path and output their contents into a
-  		   text file
+* createpdf.py -  A old, scrappy wrapper for PDFlib PDF generation (I recommend reportlab instead nowadays)
+* zip_shakedown.py - Take zip files in a specific path and output their contents into a text file
 
 Ruby
 
