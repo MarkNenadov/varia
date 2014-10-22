@@ -11,7 +11,7 @@ sort() function.
 
 (On my computer at least) With Python 2.7, bit_map_int_sort()
 tends to beat out Python sort() by about 1 second on a list of 2mil
-integers.
+integers. On Python 3.4, the difference is greater--about 1.5 seconds.
 
 AUTHOR
 
