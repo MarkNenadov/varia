@@ -6,7 +6,8 @@ duplicate-ignoring bit map sort on integers (given a list of integers and a max
 size). 
 
 We do a test and compare the speed of the bit map sort with Ruby's built in 
-sort() function.
+sort() function. On my computer with Ruby 2.1 and 2 million integers, the bit map 
+sort beats out the built-in Ruby sort by about 0.2 seconds.
 
 AUTHOR
 
@@ -80,7 +81,7 @@ end
 if __FILE__ == $0
   start1 = Time.now
 
-  AMOUNT = 1000000
+  AMOUNT = 2000000
   MAX_SIZE = 2000000
 
   integer_factory = IntegerFactory.new(AMOUNT, MAX_SIZE)
