@@ -10,15 +10,12 @@ In __main__ we do a test and compare the speed with Python's built in
 sort() function.
 
 (On my computer at least) With Python 2.7, bit_map_int_sort()
-tends to beat out Python sort() by about .1 seconds on a list of 2mil
+tends to beat out Python sort() by about 1 second on a list of 2mil
 integers.
-
-However, in Python 3.2 bit_map_int_sort() seems to pull further ahead,
-beating Python sort() by about .2 - .3 seconds
 
 AUTHOR
 
-Mark J. Nenadov (2011)
+Mark J. Nenadov (2011-2014)
 * Essex, Ontario
 * Email: <marknenadov@gmail.com>
 
@@ -45,13 +42,12 @@ import time
 def bit_map_int_sort(ints, largest_value):
     """ bit_map_int_sort()
 
-Sort a list of integers (ignoring duplicates) using a bit map and return
-the results. Based on the bit map sort that is discussed in Programing
-Pearls by Jon Bentley
+    Sort a list of integers (ignoring duplicates) using a bit map and return
+    the results. Based on the bit map sort that is discussed in Programing
+    Pearls by Jon Bentley
 
-"""
+    """
     bit_map = [0]*largest_value
-
     bit_map_range = range(largest_value)
 
     # generate bit map
@@ -69,8 +65,8 @@ Pearls by Jon Bentley
 def get_random_ints(num, max_size):
     """ get_random_ints ()
 
-return n integers with a maximum size of n
-"""
+    return n integers with a maximum size of n
+    """
 
     ints = []
     for x in range(num-1):
@@ -79,33 +75,20 @@ return n integers with a maximum size of n
     return ints
 
 if __name__ == "__main__":
-
-    # try bit_map_int_sort()
-
-    start1 = time.time()
-
-    # we'll work with 1mil integers that have values no bigger than 2mil
-    AMOUNT = 1000000
+    # we'll work with 2mil integers that have values no bigger than 2mil
+    AMOUNT = 2000000
     MAX_SIZE = 2000000
 
+    # try bit_map_int_sort()
+    start1 = time.time()
     result = bit_map_int_sort(get_random_ints(AMOUNT, MAX_SIZE), MAX_SIZE)
-
     stop1 = time.time()
 
     # try the same thing with Python's built in sort()
-
     start2 = time.time()
-
-    # we'll work with 1mil integers that have values no bigger than 2mil
-    AMOUNT = 1000000
-    MAX_SIZE = 2000000
-
     get_random_ints(AMOUNT, MAX_SIZE).sort()
-
     stop2 = time.time()
     
-    # output seconds it took
-
     print( "With bit_map_int_sort() it took " + str(stop1-start1) \
             + " seconds to sort " + str(AMOUNT) + \
             " integers that have values up to " + str(MAX_SIZE))
