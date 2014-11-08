@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>File: rsspriority.rb</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+  <div id="fileHeader">
+    <h1>rsspriority.rb</h1>
+    <table class="header-table">
+    <tr class="top-aligned-row">
+      <td><strong>Path:</strong></td>
+      <td>rsspriority.rb
+      </td>
+    </tr>
+    <tr class="top-aligned-row">
+      <td><strong>Last Update:</strong></td>
+      <td>Sun Apr 10 22:53:54 -0400 2011</td>
+    </tr>
+    </table>
+  </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+rsspriority.rb - v1.0
+</p>
+<ul>
+<li>Code that facilitates the prioritization of RSS feed content based on
+keyword scores. It displays RSS feed items from highest score on the top to
+lowest on the bottom. It also ignores items that have a score less than an
+arbitrary number (-400 default). It also should be noted that a hit in the
+title doubles the score applied for that keyword find.
+
+</li>
+</ul>
+<p>
+The Key Classes:
+</p>
+<p>
+<a href="../classes/RSSContentPriorityList.html">RSSContentPriorityList</a>
+(class)
+</p>
+<ul>
+<li>initialized with a simple array of rss source URIs and a keyword merit
+associative array (with integers negative or positive for each keyword)
+
+</li>
+<li>can be used to return list of RSS contenet from rss source URIs sorted
+based on keyword merit rating
+
+</li>
+</ul>
+<p>
+HtmlFormatter, etc. (class)
+</p>
+<ul>
+<li>initialized with a <a
+href="../classes/RSSContentPriorityList.html">RSSContentPriorityList</a>
+object
+
+</li>
+<li>handles presentation of prioritized rss content in HTML, etc.
+
+</li>
+</ul>
+<p>
+by Mark J. Nenadov - March 15, 2011
+</p>
+<p>
+License:
+</p>
+<p>
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or (at your
+option) any later version.
+</p>
+<p>
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+more details.
+</p>
+<p>
+You should have received a copy of the GNU General Public License along
+with this program. If not, see &lt;<a href="http://www">www</a>.
+</p>
+
+    </div>
+
+    <div id="requires-list">
+      <h3 class="section-bar">Required files</h3>
+
+      <div class="name-list">
+      rss/1.0&nbsp;&nbsp;
+      rss/2.0&nbsp;&nbsp;
+      open-uri&nbsp;&nbsp;
+      constants.rb&nbsp;&nbsp;
+      </div>
+    </div>
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+    <div id="constants-list">
+      <h3 class="section-bar">Constants</h3>
+
+      <div class="name-list">
+        <table summary="Constants">
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">RSSContent</td>
+          <td>=</td>
+          <td class="context-item-value">RSSContentPriorityList.new(source_list, keyword_merit)</td>
+          <td width="3em">&nbsp;</td>
+          <td class="context-item-desc">
+Generate Rated, Sorted Content
+
+</td>
+        </tr>
+        </table>
+      </div>
+    </div>
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>
