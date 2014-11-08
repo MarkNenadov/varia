@@ -1,0 +1,16 @@
+<h1>Listing publications</h1>
+<%= link_to "New publication", new_publication_path %>
+<table>
+  <tr>
+          <th>Name</th>
+          <th>Allows Simsub?</th>
+  </tr>
+  <% @publications.each do |publication| %>
+    <tr>
+      <td><a href="<%= publication.url %>"><%= publication.name %></a> </td>
+      <td><%= publication.simsub %></a></td>
+	    <td><%= link_to 'View', publication_path(publication) %></td>
+	    <td><%= link_to 'Edit', edit_publication_path(publication) %></td>
+    </tr>
+  <% end %>
+</table>

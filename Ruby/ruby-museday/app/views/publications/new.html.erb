@@ -1,0 +1,49 @@
+<% stylesheet_link_tag "global" %>
+
+<h1>New Publication</h1>
+
+<%= form_for :publication, :url => publications_path do |f| %>
+  <% if @publication.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@poem.errors.count, "error") %> prohibited
+      this publication from being saved:</h2>
+    <ul>
+    <% @publication.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+   <p>
+     <%= f.label :name %><br />
+     <%= f.text_field :name, :id => "title_field" %>
+   </p>
+
+   <p>
+     <%= f.label :url %><br />
+     <%= f.text_field :url, :id => "title_field" %>
+  </p>
+
+  <p>
+    <%= f.label :simsub %><br />
+    <%= f.radio_button :simsub, true %><label for="simsub_true">Yes</label>
+    <%= f.radio_button :simsub, false %><label for="simsub_false">No</label>
+  </p>
+
+   <p>
+      <%= f.label :notes %><br />
+      <%= f.text_area :notes, :id => "notes_area" %>
+   </p>
+
+   <p>
+   <%= f.submit %>
+   </p>
+<% end %>
+
+<%= link_to 'Back', poems_path %>
+
+<script>
+	wordCount.innerHTML = getWordCount(content_area.value);
+	lineCount.innerHTML = getLineCount(content_area.value);
+</script>
+

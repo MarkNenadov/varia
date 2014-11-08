@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  poem: 
+  name: MyString
+  date: 2013-07-24
+  submitted_poem_method: 
+
+two:
+  poem: 
+  name: MyString
+  date: 2013-07-24
+  submitted_poem_method: 

@@ -1,0 +1,21 @@
+<p>
+<strong>Title:</strong>
+<a href="<%= @publication.url %>"><%= @publication.name %></a>
+</p>
+
+<p>
+<strong>Allows Simultaneous Submissions:</strong>
+<%= @publication.simsub %>
+</p>
+
+
+<p>
+<strong>Notes:</strong>
+<%= @publication.notes %>
+</p>
+
+
+<%= link_to 'Back', publications_path %>
+
+<script>
+</script>

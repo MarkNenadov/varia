@@ -1,0 +1,9 @@
+TODO
+
+* Fix relationship between submission and submitted_poem (submission should have collection of submitted poems)
+* Finish prawn PDF view for poem
+* Implement DOC view for poem
+* Submission view/form/listings
+* Polish/finish up Publication controller/view/form/listings
+* Implement prawn PDF view for submission
+* implement DOC view for submission

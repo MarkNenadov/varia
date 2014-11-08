@@ -1,0 +1,29 @@
+<p>
+<strong>Title:</strong>
+<%= @poem.title %>
+</p>
+
+<p>
+<strong>Content:</strong>
+<span id="poemContent"><%= simple_format @poem.content %></span>
+</p>
+
+<p>
+<strong>Word Count:</strong>
+<span id="wordCount">100</span>
+</p>
+
+<p>
+<strong>Line Count:</strong>
+<span id="lineCount">15</span>
+</p>
+
+<p>
+<strong>Notes:</strong>
+<%= @poem.notes %>
+</p>
+
+<%= link_to 'Back', poems_path %>
+
+<script>
+</script>

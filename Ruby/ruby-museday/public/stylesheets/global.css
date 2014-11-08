@@ -1,0 +1,13 @@
+input#title_field {
+	width: 30%;
+}
+
+textarea#content_area {
+	width: 60%;
+	height: 290px;
+}
+
+textarea#notes_area {
+	width: 35%;
+	height: 80px;
+}

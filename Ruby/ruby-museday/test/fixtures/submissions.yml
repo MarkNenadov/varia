@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2013-07-26
+  followup_date: 2013-07-26
+  notes: MyString
+  submitted_poem: 
+
+two:
+  date: 2013-07-26
+  followup_date: 2013-07-26
+  notes: MyString
+  submitted_poem: 

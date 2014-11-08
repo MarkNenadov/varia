@@ -1,0 +1,14 @@
+<h1>Listing Submitted Poem Statuses</h1>
+<%= link_to "New Submitted Poem Status", new_submitted_poem_status_path %>
+<table>
+  <tr>
+	  <th>Name</th>
+  </tr>
+ 
+  <% @submitted_poem_statuses.each do |submitted_poem_status| %>
+    <tr>
+	    <td><%= submitted_poem_status.name %> </td>
+	    <td><%= link_to 'Edit', edit_submitted_poem_status_path(submitted_poem_status) %></td>
+    </tr>
+  <% end %>
+</table>

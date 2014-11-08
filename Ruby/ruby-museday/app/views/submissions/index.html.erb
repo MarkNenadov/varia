@@ -1,0 +1,17 @@
+<h1>Listing submissions</h1>
+<%= link_to "New submission", new_submission_path %>
+<table>
+  <tr>
+	  <th>Date</th><th>Follow-Up Date</th><th>Notes</th>
+  </tr>
+ 
+  <% @submissions.each do |submission| %>
+    <tr>
+	    <td><%= submission.date %> </td>
+	    <td><%= submission.followup_date %> </td>
+	    <td><%= submission.notes %> </td>
+	    <td><%= link_to 'View', submission_path(submission) %></td>
+	    <td><%= link_to 'Edit', edit_submission_path(submission) %></td>
+    </tr>
+  <% end %>
+</table>

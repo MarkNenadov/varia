@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  url: MyString
+  submit_url: MyString
+  simsub: false
+  notes: MyText
+  submitted_poem_method: 
+
+two:
+  name: MyString
+  url: MyString
+  submit_url: MyString
+  simsub: false
+  notes: MyText
+  submitted_poem_method: 

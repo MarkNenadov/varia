@@ -1,0 +1,42 @@
+<% stylesheet_link_tag "global" %>
+
+<h1>Editing poem</h1>
+ 
+<%= form_for :poem, :url => poem_path(@poem.id), :method => :patch do |f| %>
+  <% if @poem.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@poem.errors.count, "error") %> prohibited
+      this poem from being saved:</h2>
+    <ul>
+    <% @poem.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title, :id => "title_field" %>
+  </p>
+ 
+  <p>
+    <%= f.label :content %><br />
+    <%= f.text_area :content, :id => "content_area", :onkeyup => "wordCount.innerHTML = getWordCount(value); lineCount.innerHTML = getWordCount(value); " %><br />
+    <span id="wordCount">X</span> words, <span id="lineCount">X</span> lines
+  </p>
+
+  <p>
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes, :id => "notes_area" %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+ 
+<%= link_to 'Back', poem_path %>
+<script>
+wordCount.innerHTML = getWordCount( content_area.value );
+lineCount.innerHTML = getLineCount( content_area.value );
+</script>

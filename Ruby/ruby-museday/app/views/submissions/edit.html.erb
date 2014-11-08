@@ -1,0 +1,36 @@
+<% stylesheet_link_tag "global" %>
+
+<h1>Editing Submission</h1>
+
+<%= form_for :submission, :url => submissions_path(@submission.id), :method => :patch do |f| %>
+  <% if @submission.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@submission.errors.count, "error") %> prohibited
+      this submission from being saved:</h2>
+    <ul>
+    <% @submission.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+     
+   <p>
+     <%= f.label :date %><br />
+     <%= f.date_select :date, :start_year => 2010 %>
+   </p>
+
+      <p>
+     <%= f.label :followup_date %><br />
+     <%= f.date_select :followup_date, :start_year => 2013 %>
+   </p>
+
+   <p>
+      <%= f.label :notes %><br />
+      <%= f.text_area :notes, :id => "notes_area" %>
+   </p>
+
+   <p>
+   <%= f.submit %>
+   </p>
+<% end %>
