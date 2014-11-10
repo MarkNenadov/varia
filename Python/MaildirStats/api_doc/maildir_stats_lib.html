@@ -1,0 +1,237 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module maildir_stats_lib</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>maildir_stats_lib</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:///F:/development/portablegit/maildirstats/maildir_stats_lib.py">f:\development\portablegit\maildirstats\maildir_stats_lib.py</a></font></td></tr></table>
+    <p><tt>maildir_stats_lib.py<br>
+&nbsp;<br>
+--&nbsp;Support&nbsp;library&nbsp;for&nbsp;maildir_stats.py&nbsp;--<br>
+&nbsp;<br>
+--&nbsp;Mark&nbsp;J.&nbsp;Nenadov&nbsp;-&nbsp;2011&nbsp;-&nbsp;marknenadov@gmail.com&nbsp;--<br>
+&nbsp;<br>
+License:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;program&nbsp;is&nbsp;free&nbsp;software:&nbsp;you&nbsp;can&nbsp;redistribute&nbsp;it&nbsp;and/or&nbsp;modify<br>
+&nbsp;&nbsp;&nbsp;&nbsp;it&nbsp;under&nbsp;the&nbsp;terms&nbsp;of&nbsp;the&nbsp;GNU&nbsp;Lesser&nbsp;General&nbsp;Public&nbsp;License&nbsp;as&nbsp;published&nbsp;by<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;Free&nbsp;Software&nbsp;Foundation,&nbsp;either&nbsp;version&nbsp;3&nbsp;of&nbsp;the&nbsp;License,&nbsp;or<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(at&nbsp;your&nbsp;option)&nbsp;any&nbsp;later&nbsp;version.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;program&nbsp;is&nbsp;distributed&nbsp;in&nbsp;the&nbsp;hope&nbsp;that&nbsp;it&nbsp;will&nbsp;be&nbsp;useful,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;but&nbsp;WITHOUT&nbsp;ANY&nbsp;WARRANTY;&nbsp;without&nbsp;even&nbsp;the&nbsp;implied&nbsp;warranty&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;MERCHANTABILITY&nbsp;or&nbsp;FITNESS&nbsp;FOR&nbsp;A&nbsp;PARTICULAR&nbsp;PURPOSE.&nbsp;&nbsp;See&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;GNU&nbsp;General&nbsp;Public&nbsp;License&nbsp;for&nbsp;more&nbsp;details.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;should&nbsp;have&nbsp;received&nbsp;a&nbsp;copy&nbsp;of&nbsp;the&nbsp;GNU&nbsp;General&nbsp;Public&nbsp;License<br>
+&nbsp;&nbsp;&nbsp;&nbsp;along&nbsp;with&nbsp;this&nbsp;program.&nbsp;&nbsp;If&nbsp;not,&nbsp;see&nbsp;&lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a></tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="maildir_stats_lib.html#MailStats">MailStats</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="maildir_stats_lib.html#AccountStatsCollection">AccountStatsCollection</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="AccountStatsCollection">class <strong>AccountStatsCollection</strong></a>(<a href="maildir_stats_lib.html#MailStats">MailStats</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Extends&nbsp;<a href="#MailStats">MailStats</a>&nbsp;class&nbsp;to&nbsp;make&nbsp;it&nbsp;usable&nbsp;for&nbsp;managing&nbsp;the&nbsp;same&nbsp;<br>
+information&nbsp;about&nbsp;a&nbsp;collection&nbsp;of&nbsp;<a href="#MailStats">MailStats</a>&nbsp;objects<br>
+&nbsp;<br>
+ie:<br>
+c&nbsp;=&nbsp;<a href="#AccountStatsCollection">AccountStatsCollection</a>()<br>
+c.<a href="#AccountStatsCollection-add_item">add_item</a>(m)<br>
+...<br>
+c.<a href="#AccountStatsCollection-update">update</a>()<br>
+print&nbsp;m.<a href="#AccountStatsCollection-get_avg_mail_size">get_avg_mail_size</a>('KB')<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="AccountStatsCollection-__init__"><strong>__init__</strong></a>(self, units<font color="#909090">='MB'</font>)</dt><dd><tt>Constructor</tt></dd></dl>
+
+<dl><dt><a name="AccountStatsCollection-add_item"><strong>add_item</strong></a>(self, i)</dt><dd><tt>Add&nbsp;a&nbsp;<a href="#MailStats">MailStats</a>&nbsp;object</tt></dd></dl>
+
+<dl><dt><a name="AccountStatsCollection-update"><strong>update</strong></a>(self)</dt><dd><tt>Update&nbsp;overall&nbsp;counts/averages&nbsp;to&nbsp;reflect&nbsp;the&nbsp;current&nbsp;list&nbsp;of&nbsp;<br>
+<a href="#MailStats">MailStats</a>&nbsp;items</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>count</strong> = 0</dl>
+
+<dl><dt><strong>items</strong> = []</dl>
+
+<dl><dt><strong>num_msgs_bigger_than</strong> = 0</dl>
+
+<dl><dt><strong>size</strong> = 0</dl>
+
+<dl><dt><strong>slice_dict</strong> = {}</dl>
+
+<dl><dt><strong>units</strong> = ''</dl>
+
+<hr>
+Methods inherited from <a href="maildir_stats_lib.html#MailStats">MailStats</a>:<br>
+<dl><dt><a name="AccountStatsCollection-get_avg_mail_size"><strong>get_avg_mail_size</strong></a>(self, convert_units<font color="#909090">=1</font>)</dt><dd><tt>Get&nbsp;average&nbsp;mail&nbsp;size</tt></dd></dl>
+
+<dl><dt><a name="AccountStatsCollection-get_folders_above_x_levels"><strong>get_folders_above_x_levels</strong></a>(self, depth_num)</dt><dd><tt>get&nbsp;the&nbsp;number&nbsp;of&nbsp;folders&nbsp;that&nbsp;are&nbsp;beyond&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;levels</tt></dd></dl>
+
+<dl><dt><a name="AccountStatsCollection-get_highest_folder_depth"><strong>get_highest_folder_depth</strong></a>(self)</dt><dd><tt>get&nbsp;the&nbsp;highest&nbsp;folder&nbsp;depth&nbsp;they&nbsp;have&nbsp;(ie.&nbsp;highest&nbsp;level&nbsp;of&nbsp;<br>
+sub&nbsp;folders)</tt></dd></dl>
+
+<dl><dt><a name="AccountStatsCollection-get_mail_count"><strong>get_mail_count</strong></a>(self)</dt><dd><tt>Get&nbsp;mail&nbsp;count</tt></dd></dl>
+
+<dl><dt><a name="AccountStatsCollection-get_num_msgs_bigger_than"><strong>get_num_msgs_bigger_than</strong></a>(self, threshold_size<font color="#909090">=25</font>)</dt><dd><tt>Get&nbsp;#&nbsp;of&nbsp;messages&nbsp;that&nbsp;are&nbsp;bigger&nbsp;than&nbsp;the&nbsp;threshold</tt></dd></dl>
+
+<dl><dt><a name="AccountStatsCollection-get_size_time_slice"><strong>get_size_time_slice</strong></a>(self, days_back<font color="#909090">=0</font>)</dt><dd><tt>Get&nbsp;the&nbsp;total&nbsp;mail&nbsp;storage&nbsp;size&nbsp;for&nbsp;e-mails&nbsp;received&nbsp;within&nbsp;a&nbsp;<br>
+particular&nbsp;time&nbsp;slice.<br>
+&nbsp;<br>
+For&nbsp;now&nbsp;this&nbsp;method&nbsp;is&nbsp;limited&nbsp;to&nbsp;returning&nbsp;a&nbsp;slice&nbsp;which&nbsp;extends&nbsp;<br>
+from&nbsp;the&nbsp;current&nbsp;time&nbsp;during&nbsp;an&nbsp;arbitrary&nbsp;number&nbsp;of&nbsp;days&nbsp;ago&nbsp;to&nbsp;the<br>
+present&nbsp;day/time.</tt></dd></dl>
+
+<dl><dt><a name="AccountStatsCollection-get_size_time_slices"><strong>get_size_time_slices</strong></a>(self, slice_list)</dt><dd><tt>Pass&nbsp;an&nbsp;list&nbsp;of&nbsp;"day&nbsp;agos"&nbsp;to&nbsp;<a href="#AccountStatsCollection-get_size_time_slice">get_size_time_slice</a>()&nbsp;and&nbsp;return&nbsp;the&nbsp;<br>
+results</tt></dd></dl>
+
+<dl><dt><a name="AccountStatsCollection-get_total_size"><strong>get_total_size</strong></a>(self, convert_units<font color="#909090">=1</font>)</dt><dd><tt>Get&nbsp;total&nbsp;size</tt></dd></dl>
+
+<dl><dt><a name="AccountStatsCollection-get_unit_factor"><strong>get_unit_factor</strong></a>(self)</dt><dd><tt>get&nbsp;the&nbsp;current&nbsp;unit&nbsp;factor</tt></dd></dl>
+
+<dl><dt><a name="AccountStatsCollection-get_user_name"><strong>get_user_name</strong></a>(self)</dt><dd><tt>Get&nbsp;user&nbsp;name</tt></dd></dl>
+
+<dl><dt><a name="AccountStatsCollection-unit_convert"><strong>unit_convert</strong></a>(self, value)</dt><dd><tt>convert&nbsp;units</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="maildir_stats_lib.html#MailStats">MailStats</a>:<br>
+<dl><dt><strong>avg_mail_size</strong> = 0</dl>
+
+<dl><dt><strong>folder_depth_above</strong> = {2: 0, 3: 0}</dl>
+
+<dl><dt><strong>highest_folder_depth</strong> = 0</dl>
+
+<dl><dt><strong>mail_count</strong> = 0</dl>
+
+<dl><dt><strong>msgs_bigger_than_threshold</strong> = 25</dl>
+
+<dl><dt><strong>size_date_mapping</strong> = {}</dl>
+
+<dl><dt><strong>total_size</strong> = 0</dl>
+
+<dl><dt><strong>user_name</strong> = ''</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="MailStats">class <strong>MailStats</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Represents&nbsp;a&nbsp;particular&nbsp;users&nbsp;mail&nbsp;and&nbsp;abstracts&nbsp;away&nbsp;some&nbsp;of&nbsp;the&nbsp;unit&nbsp;<br>
+conversions&nbsp;and&nbsp;calculations<br>
+&nbsp;<br>
+Please&nbsp;note&nbsp;that&nbsp;this&nbsp;utilizes&nbsp;keyword&nbsp;arguments.<br>
+&nbsp;<br>
+ie:<br>
+m&nbsp;=&nbsp;<a href="#MailStats">MailStats</a>(user_name='joe',&nbsp;total_size=400000,&nbsp;mail_count=1029)<br>
+print&nbsp;m.<a href="#MailStats-get_avg_mail_size">get_avg_mail_size</a>('KB')<br>
+print&nbsp;m.<a href="#MailStats-get_user_name">get_user_name</a>()<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="MailStats-__init__"><strong>__init__</strong></a>(self, **kws)</dt><dd><tt>Constructor&nbsp;-&nbsp;uses&nbsp;keyword&nbsp;arguments</tt></dd></dl>
+
+<dl><dt><a name="MailStats-get_avg_mail_size"><strong>get_avg_mail_size</strong></a>(self, convert_units<font color="#909090">=1</font>)</dt><dd><tt>Get&nbsp;average&nbsp;mail&nbsp;size</tt></dd></dl>
+
+<dl><dt><a name="MailStats-get_folders_above_x_levels"><strong>get_folders_above_x_levels</strong></a>(self, depth_num)</dt><dd><tt>get&nbsp;the&nbsp;number&nbsp;of&nbsp;folders&nbsp;that&nbsp;are&nbsp;beyond&nbsp;the&nbsp;given&nbsp;number&nbsp;of&nbsp;levels</tt></dd></dl>
+
+<dl><dt><a name="MailStats-get_highest_folder_depth"><strong>get_highest_folder_depth</strong></a>(self)</dt><dd><tt>get&nbsp;the&nbsp;highest&nbsp;folder&nbsp;depth&nbsp;they&nbsp;have&nbsp;(ie.&nbsp;highest&nbsp;level&nbsp;of&nbsp;<br>
+sub&nbsp;folders)</tt></dd></dl>
+
+<dl><dt><a name="MailStats-get_mail_count"><strong>get_mail_count</strong></a>(self)</dt><dd><tt>Get&nbsp;mail&nbsp;count</tt></dd></dl>
+
+<dl><dt><a name="MailStats-get_num_msgs_bigger_than"><strong>get_num_msgs_bigger_than</strong></a>(self, threshold_size<font color="#909090">=25</font>)</dt><dd><tt>Get&nbsp;#&nbsp;of&nbsp;messages&nbsp;that&nbsp;are&nbsp;bigger&nbsp;than&nbsp;the&nbsp;threshold</tt></dd></dl>
+
+<dl><dt><a name="MailStats-get_size_time_slice"><strong>get_size_time_slice</strong></a>(self, days_back<font color="#909090">=0</font>)</dt><dd><tt>Get&nbsp;the&nbsp;total&nbsp;mail&nbsp;storage&nbsp;size&nbsp;for&nbsp;e-mails&nbsp;received&nbsp;within&nbsp;a&nbsp;<br>
+particular&nbsp;time&nbsp;slice.<br>
+&nbsp;<br>
+For&nbsp;now&nbsp;this&nbsp;method&nbsp;is&nbsp;limited&nbsp;to&nbsp;returning&nbsp;a&nbsp;slice&nbsp;which&nbsp;extends&nbsp;<br>
+from&nbsp;the&nbsp;current&nbsp;time&nbsp;during&nbsp;an&nbsp;arbitrary&nbsp;number&nbsp;of&nbsp;days&nbsp;ago&nbsp;to&nbsp;the<br>
+present&nbsp;day/time.</tt></dd></dl>
+
+<dl><dt><a name="MailStats-get_size_time_slices"><strong>get_size_time_slices</strong></a>(self, slice_list)</dt><dd><tt>Pass&nbsp;an&nbsp;list&nbsp;of&nbsp;"day&nbsp;agos"&nbsp;to&nbsp;<a href="#MailStats-get_size_time_slice">get_size_time_slice</a>()&nbsp;and&nbsp;return&nbsp;the&nbsp;<br>
+results</tt></dd></dl>
+
+<dl><dt><a name="MailStats-get_total_size"><strong>get_total_size</strong></a>(self, convert_units<font color="#909090">=1</font>)</dt><dd><tt>Get&nbsp;total&nbsp;size</tt></dd></dl>
+
+<dl><dt><a name="MailStats-get_unit_factor"><strong>get_unit_factor</strong></a>(self)</dt><dd><tt>get&nbsp;the&nbsp;current&nbsp;unit&nbsp;factor</tt></dd></dl>
+
+<dl><dt><a name="MailStats-get_user_name"><strong>get_user_name</strong></a>(self)</dt><dd><tt>Get&nbsp;user&nbsp;name</tt></dd></dl>
+
+<dl><dt><a name="MailStats-unit_convert"><strong>unit_convert</strong></a>(self, value)</dt><dd><tt>convert&nbsp;units</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>avg_mail_size</strong> = 0</dl>
+
+<dl><dt><strong>folder_depth_above</strong> = {2: 0, 3: 0}</dl>
+
+<dl><dt><strong>highest_folder_depth</strong> = 0</dl>
+
+<dl><dt><strong>mail_count</strong> = 0</dl>
+
+<dl><dt><strong>msgs_bigger_than_threshold</strong> = 25</dl>
+
+<dl><dt><strong>size_date_mapping</strong> = {}</dl>
+
+<dl><dt><strong>total_size</strong> = 0</dl>
+
+<dl><dt><strong>units</strong> = ''</dl>
+
+<dl><dt><strong>user_name</strong> = ''</dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-analyze_maildir"><strong>analyze_maildir</strong></a>(mail_dir, user_name, units)</dt><dd><tt>Walk&nbsp;through&nbsp;a&nbsp;maildir&nbsp;and&nbsp;return&nbsp;a&nbsp;<a href="#MailStats">MailStats</a>&nbsp;object</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>ACCOUNT_IGNORE_THRESHOLD_COUNT</strong> = 50<br>
+<strong>ACCOUNT_IGNORE_THRESHOLD_SIZE</strong> = 50000<br>
+<strong>BAD_ENTRY</strong> = 0.0<br>
+<strong>CSV_OUT_FILE</strong> = 'mailstats.csv'<br>
+<strong>DAY_SLICES</strong> = (365, 100, 60, 30, 15)<br>
+<strong>HOME_DIRS</strong> = ['/usr/home2/', '/home/']<br>
+<strong>SECONDS_IN_A_DAY</strong> = 86400<br>
+<strong>UNIT_FACTORS</strong> = {'': 1.0, 'KB': 1024.0, 'MB': 1048576.0}<br>
+<strong>USERS_TO_IGNORE</strong> = ['chrisw', 'nszydlek', 'phila', 'shawnm', 'bdinkleman', 'rjackson', 'ddtps', 'rclaeys', 'ggirard', 'dsutts', 'lraymond', 'erics', 'rgirard', 'student', 'resumes', 'jscott', 'kboakes', 'accounting', 'mkobelsky', 'mletourneau', ...]</td></tr></table>
+</body></html>
