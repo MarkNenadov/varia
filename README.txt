@@ -22,6 +22,7 @@ Java Code
 	    	 a version that uses Freemarker to output an HTML page)
 * JxlDemo  - A demonstration of how to do simple Excel read/write via the Java Excel
 			 API (requires junit and the jxl library: http://jexcelapi.sourceforge.net/ )
+* KvtmlVocabularyParser - A parser to extract vocabulary from a Kvtml file.
 
 Python
 
