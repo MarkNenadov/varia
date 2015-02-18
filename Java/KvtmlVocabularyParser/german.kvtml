@@ -1,0 +1,1565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kvtml version="2.0">
+  <information>
+    <generator>kwordquiz 2012.11.14</generator>
+    <title>Untitled</title>
+    <date>2015-01-28</date>
+  </information>
+  <identifiers>
+    <identifier id="0">
+      <name>Column 1</name>
+      <locale>en</locale>
+    </identifier>
+    <identifier id="1">
+      <name>Column 2</name>
+      <locale>en</locale>
+    </identifier>
+  </identifiers>
+  <entries>
+    <entry id="0">
+      <translation id="0">
+        <text>ganz</text>
+      </translation>
+      <translation id="1">
+        <text>quite</text>
+      </translation>
+    </entry>
+    <entry id="1">
+      <translation id="0">
+        <text>wichtig</text>
+      </translation>
+      <translation id="1">
+        <text>important</text>
+      </translation>
+    </entry>
+    <entry id="2">
+      <translation id="0">
+        <text>fertig</text>
+      </translation>
+      <translation id="1">
+        <text>ready</text>
+      </translation>
+    </entry>
+    <entry id="3">
+      <translation id="0">
+        <text>betet</text>
+      </translation>
+      <translation id="1">
+        <text>pray</text>
+      </translation>
+    </entry>
+    <entry id="4">
+      <translation id="0">
+        <text>prinzipen</text>
+      </translation>
+      <translation id="1">
+        <text>principles</text>
+      </translation>
+    </entry>
+    <entry id="5">
+      <translation id="0">
+        <text>stets</text>
+      </translation>
+      <translation id="1">
+        <text>always</text>
+      </translation>
+    </entry>
+    <entry id="6">
+      <translation id="0">
+        <text>Geist</text>
+      </translation>
+      <translation id="1">
+        <text>Spirit</text>
+      </translation>
+    </entry>
+    <entry id="7">
+      <translation id="0">
+        <text>jede</text>
+      </translation>
+      <translation id="1">
+        <text>every</text>
+      </translation>
+    </entry>
+    <entry id="8">
+      <translation id="0">
+        <text>nachdem</text>
+      </translation>
+      <translation id="1">
+        <text>after</text>
+      </translation>
+    </entry>
+    <entry id="9">
+      <translation id="0">
+        <text>laufen</text>
+      </translation>
+      <translation id="1">
+        <text>to run</text>
+      </translation>
+    </entry>
+    <entry id="10">
+      <translation id="0">
+        <text>frau</text>
+      </translation>
+      <translation id="1">
+        <text>woman</text>
+      </translation>
+    </entry>
+    <entry id="11">
+      <translation id="0">
+        <text>pferd</text>
+      </translation>
+      <translation id="1">
+        <text>horse</text>
+      </translation>
+    </entry>
+    <entry id="12">
+      <translation id="0">
+        <text>sobald</text>
+      </translation>
+      <translation id="1">
+        <text>as soon as</text>
+      </translation>
+    </entry>
+    <entry id="13">
+      <translation id="0">
+        <text>heiligen</text>
+      </translation>
+      <translation id="1">
+        <text>saints</text>
+      </translation>
+    </entry>
+    <entry id="14">
+      <translation id="0">
+        <text>sowie</text>
+      </translation>
+      <translation id="1">
+        <text>as well as</text>
+      </translation>
+    </entry>
+    <entry id="15">
+      <translation id="0">
+        <text>obwohl</text>
+      </translation>
+      <translation id="1">
+        <text>even though</text>
+      </translation>
+    </entry>
+    <entry id="16">
+      <translation id="0">
+        <text>mann</text>
+      </translation>
+      <translation id="1">
+        <text>man</text>
+      </translation>
+    </entry>
+    <entry id="17">
+      <translation id="0">
+        <text>gute</text>
+      </translation>
+      <translation id="1">
+        <text>good</text>
+      </translation>
+    </entry>
+    <entry id="18">
+      <translation id="0">
+        <text>mein, meine</text>
+      </translation>
+      <translation id="1">
+        <text>my</text>
+      </translation>
+    </entry>
+    <entry id="19">
+      <translation id="0">
+        <text>flehen</text>
+      </translation>
+      <translation id="1">
+        <text>pleading</text>
+      </translation>
+    </entry>
+    <entry id="20">
+      <translation id="0">
+        <text>apfel</text>
+      </translation>
+      <translation id="1">
+        <text>apple</text>
+      </translation>
+    </entry>
+    <entry id="21">
+      <translation id="0">
+        <text>kommen</text>
+      </translation>
+      <translation id="1">
+        <text>come</text>
+      </translation>
+    </entry>
+    <entry id="22">
+      <translation id="0">
+        <text>stoff</text>
+      </translation>
+      <translation id="1">
+        <text>stuff</text>
+      </translation>
+    </entry>
+    <entry id="23">
+      <translation id="0">
+        <text>viele</text>
+      </translation>
+      <translation id="1">
+        <text>many</text>
+      </translation>
+    </entry>
+    <entry id="24">
+      <translation id="0">
+        <text>singen</text>
+      </translation>
+      <translation id="1">
+        <text>to sing</text>
+      </translation>
+    </entry>
+    <entry id="25">
+      <translation id="0">
+        <text>mit</text>
+      </translation>
+      <translation id="1">
+        <text>with</text>
+      </translation>
+    </entry>
+    <entry id="26">
+      <translation id="0">
+        <text>jemand</text>
+      </translation>
+      <translation id="1">
+        <text>anybody</text>
+      </translation>
+    </entry>
+    <entry id="27">
+      <translation id="0">
+        <text>kinder</text>
+      </translation>
+      <translation id="1">
+        <text>children</text>
+      </translation>
+    </entry>
+    <entry id="28">
+      <translation id="0">
+        <text>mutter</text>
+      </translation>
+      <translation id="1">
+        <text>mother</text>
+      </translation>
+    </entry>
+    <entry id="29">
+      <translation id="0">
+        <text>löffel</text>
+      </translation>
+      <translation id="1">
+        <text>spoon</text>
+      </translation>
+    </entry>
+    <entry id="30">
+      <translation id="0">
+        <text>spielt</text>
+      </translation>
+      <translation id="1">
+        <text>play</text>
+      </translation>
+    </entry>
+    <entry id="31">
+      <translation id="0">
+        <text>eltern</text>
+      </translation>
+      <translation id="1">
+        <text>parents</text>
+      </translation>
+    </entry>
+    <entry id="32">
+      <translation id="0">
+        <text>und</text>
+      </translation>
+      <translation id="1">
+        <text>and</text>
+      </translation>
+    </entry>
+    <entry id="33">
+      <translation id="0">
+        <text>euch</text>
+      </translation>
+      <translation id="1">
+        <text>you</text>
+      </translation>
+    </entry>
+    <entry id="34">
+      <translation id="0">
+        <text>schussel</text>
+      </translation>
+      <translation id="1">
+        <text>bowl</text>
+      </translation>
+    </entry>
+    <entry id="35">
+      <translation id="0">
+        <text>tochter</text>
+      </translation>
+      <translation id="1">
+        <text>daughter</text>
+      </translation>
+    </entry>
+    <entry id="36">
+      <translation id="0">
+        <text>wohnort</text>
+      </translation>
+      <translation id="1">
+        <text>place</text>
+      </translation>
+    </entry>
+    <entry id="37">
+      <translation id="0">
+        <text>rasierer</text>
+      </translation>
+      <translation id="1">
+        <text>razor</text>
+      </translation>
+    </entry>
+    <entry id="38">
+      <translation id="0">
+        <text>hier</text>
+      </translation>
+      <translation id="1">
+        <text>here</text>
+      </translation>
+    </entry>
+    <entry id="39">
+      <translation id="0">
+        <text>küche</text>
+      </translation>
+      <translation id="1">
+        <text>kitchen</text>
+      </translation>
+    </entry>
+    <entry id="40">
+      <translation id="0">
+        <text>spiegel</text>
+      </translation>
+      <translation id="1">
+        <text>mirror</text>
+      </translation>
+    </entry>
+    <entry id="41">
+      <translation id="0">
+        <text>Öl</text>
+      </translation>
+      <translation id="1">
+        <text>oil</text>
+      </translation>
+    </entry>
+    <entry id="42">
+      <translation id="0">
+        <text>alt</text>
+      </translation>
+      <translation id="1">
+        <text>old</text>
+      </translation>
+    </entry>
+    <entry id="43">
+      <translation id="0">
+        <text>besten</text>
+      </translation>
+      <translation id="1">
+        <text>best</text>
+      </translation>
+    </entry>
+    <entry id="44">
+      <translation id="0">
+        <text>oder</text>
+      </translation>
+      <translation id="1">
+        <text>or</text>
+      </translation>
+    </entry>
+    <entry id="45">
+      <translation id="0">
+        <text>eher</text>
+      </translation>
+      <translation id="1">
+        <text>rather</text>
+      </translation>
+    </entry>
+    <entry id="46">
+      <translation id="0">
+        <text>neu</text>
+      </translation>
+      <translation id="1">
+        <text>new</text>
+      </translation>
+    </entry>
+    <entry id="47">
+      <translation id="0">
+        <text>teuer</text>
+      </translation>
+      <translation id="1">
+        <text>expensive</text>
+      </translation>
+    </entry>
+    <entry id="48">
+      <translation id="0">
+        <text>leiter</text>
+      </translation>
+      <translation id="1">
+        <text>ladder</text>
+      </translation>
+    </entry>
+    <entry id="49">
+      <translation id="0">
+        <text>christlich</text>
+      </translation>
+      <translation id="1">
+        <text>christian</text>
+      </translation>
+    </entry>
+    <entry id="50">
+      <translation id="0">
+        <text>mittag</text>
+      </translation>
+      <translation id="1">
+        <text>noon</text>
+      </translation>
+    </entry>
+    <entry id="51">
+      <translation id="0">
+        <text>rot</text>
+      </translation>
+      <translation id="1">
+        <text>red</text>
+      </translation>
+    </entry>
+    <entry id="52">
+      <translation id="0">
+        <text>rationalismus</text>
+      </translation>
+      <translation id="1">
+        <text>rationalism</text>
+      </translation>
+    </entry>
+    <entry id="53">
+      <translation id="0">
+        <text>sofern</text>
+      </translation>
+      <translation id="1">
+        <text>provided that</text>
+      </translation>
+    </entry>
+    <entry id="54">
+      <translation id="0">
+        <text>solange</text>
+      </translation>
+      <translation id="1">
+        <text>as long as</text>
+      </translation>
+    </entry>
+    <entry id="55">
+      <translation id="0">
+        <text>teller</text>
+      </translation>
+      <translation id="1">
+        <text>plates</text>
+      </translation>
+    </entry>
+    <entry id="56">
+      <translation id="0">
+        <text>buch</text>
+      </translation>
+      <translation id="1">
+        <text>book</text>
+      </translation>
+    </entry>
+    <entry id="57">
+      <translation id="0">
+        <text>stein</text>
+      </translation>
+      <translation id="1">
+        <text>stone</text>
+      </translation>
+    </entry>
+    <entry id="58">
+      <translation id="0">
+        <text>stillen</text>
+      </translation>
+      <translation id="1">
+        <text>to calm</text>
+      </translation>
+    </entry>
+    <entry id="59">
+      <translation id="0">
+        <text>mannlich</text>
+      </translation>
+      <translation id="1">
+        <text>manly</text>
+      </translation>
+    </entry>
+    <entry id="60">
+      <translation id="0">
+        <text>nordlich</text>
+      </translation>
+      <translation id="1">
+        <text>northern</text>
+      </translation>
+    </entry>
+    <entry id="61">
+      <translation id="0">
+        <text>frisch</text>
+      </translation>
+      <translation id="1">
+        <text>fresh</text>
+      </translation>
+    </entry>
+    <entry id="62">
+      <translation id="0">
+        <text>unze</text>
+      </translation>
+      <translation id="1">
+        <text>ounce</text>
+      </translation>
+    </entry>
+    <entry id="63">
+      <translation id="0">
+        <text>feucht</text>
+      </translation>
+      <translation id="1">
+        <text>damp</text>
+      </translation>
+    </entry>
+    <entry id="64">
+      <translation id="0">
+        <text>wasser</text>
+      </translation>
+      <translation id="1">
+        <text>water</text>
+      </translation>
+    </entry>
+    <entry id="65">
+      <translation id="0">
+        <text>freitag</text>
+      </translation>
+      <translation id="1">
+        <text>friday</text>
+      </translation>
+    </entry>
+    <entry id="66">
+      <translation id="0">
+        <text>judisch</text>
+      </translation>
+      <translation id="1">
+        <text>jewish</text>
+      </translation>
+    </entry>
+    <entry id="67">
+      <translation id="0">
+        <text>muskel</text>
+      </translation>
+      <translation id="1">
+        <text>muscle</text>
+      </translation>
+    </entry>
+    <entry id="68">
+      <translation id="0">
+        <text>freunde</text>
+      </translation>
+      <translation id="1">
+        <text>joy</text>
+      </translation>
+    </entry>
+    <entry id="69">
+      <translation id="0">
+        <text>landwirt</text>
+      </translation>
+      <translation id="1">
+        <text>farmer</text>
+      </translation>
+    </entry>
+    <entry id="70">
+      <translation id="0">
+        <text>biene</text>
+      </translation>
+      <translation id="1">
+        <text>bee</text>
+      </translation>
+    </entry>
+    <entry id="71">
+      <translation id="0">
+        <text>eule</text>
+      </translation>
+      <translation id="1">
+        <text>owl</text>
+      </translation>
+    </entry>
+    <entry id="72">
+      <translation id="0">
+        <text>heilig</text>
+      </translation>
+      <translation id="1">
+        <text>holy</text>
+      </translation>
+    </entry>
+    <entry id="73">
+      <translation id="0">
+        <text>handlich</text>
+      </translation>
+      <translation id="1">
+        <text>handy</text>
+      </translation>
+    </entry>
+    <entry id="74">
+      <translation id="0">
+        <text>karfrei tag</text>
+      </translation>
+      <translation id="1">
+        <text>Good Friday</text>
+      </translation>
+    </entry>
+    <entry id="75">
+      <translation id="0">
+        <text>gruppe</text>
+      </translation>
+      <translation id="1">
+        <text>group</text>
+      </translation>
+    </entry>
+    <entry id="76">
+      <translation id="0">
+        <text>droge</text>
+      </translation>
+      <translation id="1">
+        <text>drug</text>
+      </translation>
+    </entry>
+    <entry id="77">
+      <translation id="0">
+        <text>schnitt</text>
+      </translation>
+      <translation id="1">
+        <text>cut</text>
+      </translation>
+    </entry>
+    <entry id="78">
+      <translation id="0">
+        <text>schach</text>
+      </translation>
+      <translation id="1">
+        <text>chess</text>
+      </translation>
+    </entry>
+    <entry id="79">
+      <translation id="0">
+        <text>kirche</text>
+      </translation>
+      <translation id="1">
+        <text>church</text>
+      </translation>
+    </entry>
+    <entry id="80">
+      <translation id="0">
+        <text>kino</text>
+      </translation>
+      <translation id="1">
+        <text>cinema</text>
+      </translation>
+    </entry>
+    <entry id="81">
+      <translation id="0">
+        <text>wagen</text>
+      </translation>
+      <translation id="1">
+        <text>car</text>
+      </translation>
+    </entry>
+    <entry id="82">
+      <translation id="0">
+        <text>blutig</text>
+      </translation>
+      <translation id="1">
+        <text>bloody</text>
+      </translation>
+    </entry>
+    <entry id="83">
+      <translation id="0">
+        <text>blau</text>
+      </translation>
+      <translation id="1">
+        <text>blue</text>
+      </translation>
+    </entry>
+    <entry id="84">
+      <translation id="0">
+        <text>keltisch</text>
+      </translation>
+      <translation id="1">
+        <text>celtic</text>
+      </translation>
+    </entry>
+    <entry id="85">
+      <translation id="0">
+        <text>fragen</text>
+      </translation>
+      <translation id="1">
+        <text>ask</text>
+      </translation>
+    </entry>
+    <entry id="86">
+      <translation id="0">
+        <text>jude</text>
+      </translation>
+      <translation id="1">
+        <text>jew</text>
+      </translation>
+    </entry>
+    <entry id="87">
+      <translation id="0">
+        <text>kauen</text>
+      </translation>
+      <translation id="1">
+        <text>to chew</text>
+      </translation>
+    </entry>
+    <entry id="88">
+      <translation id="0">
+        <text>fleischlich</text>
+      </translation>
+      <translation id="1">
+        <text>carnal</text>
+      </translation>
+    </entry>
+    <entry id="89">
+      <translation id="0">
+        <text>bibel</text>
+      </translation>
+      <translation id="1">
+        <text>bible</text>
+      </translation>
+    </entry>
+    <entry id="90">
+      <translation id="0">
+        <text>jahr</text>
+      </translation>
+      <translation id="1">
+        <text>year</text>
+      </translation>
+    </entry>
+    <entry id="91">
+      <translation id="0">
+        <text>zwei</text>
+      </translation>
+      <translation id="1">
+        <text>two</text>
+      </translation>
+    </entry>
+    <entry id="92">
+      <translation id="0">
+        <text>will</text>
+      </translation>
+      <translation id="1">
+        <text>wants</text>
+      </translation>
+    </entry>
+    <entry id="93">
+      <translation id="0">
+        <text>immer</text>
+      </translation>
+      <translation id="1">
+        <text>always</text>
+      </translation>
+    </entry>
+    <entry id="94">
+      <translation id="0">
+        <text>muss</text>
+      </translation>
+      <translation id="1">
+        <text>must</text>
+      </translation>
+    </entry>
+    <entry id="95">
+      <translation id="0">
+        <text>mehr</text>
+      </translation>
+      <translation id="1">
+        <text>more</text>
+      </translation>
+    </entry>
+    <entry id="96">
+      <translation id="0">
+        <text>essen</text>
+      </translation>
+      <translation id="1">
+        <text>eat</text>
+      </translation>
+    </entry>
+    <entry id="97">
+      <translation id="0">
+        <text>trinken</text>
+      </translation>
+      <translation id="1">
+        <text>to drink</text>
+      </translation>
+    </entry>
+    <entry id="98">
+      <translation id="0">
+        <text>welt</text>
+      </translation>
+      <translation id="1">
+        <text>world</text>
+      </translation>
+    </entry>
+    <entry id="99">
+      <translation id="0">
+        <text>spion</text>
+      </translation>
+      <translation id="1">
+        <text>spy</text>
+      </translation>
+    </entry>
+    <entry id="100">
+      <translation id="0">
+        <text>schone</text>
+      </translation>
+      <translation id="1">
+        <text>beauty</text>
+      </translation>
+    </entry>
+    <entry id="101">
+      <translation id="0">
+        <text>stark</text>
+      </translation>
+      <translation id="1">
+        <text>strong</text>
+      </translation>
+    </entry>
+    <entry id="102">
+      <translation id="0">
+        <text>schnell</text>
+      </translation>
+      <translation id="1">
+        <text>fast</text>
+      </translation>
+    </entry>
+    <entry id="103">
+      <translation id="0">
+        <text>ziemlich</text>
+      </translation>
+      <translation id="1">
+        <text>pretty</text>
+      </translation>
+    </entry>
+    <entry id="104">
+      <translation id="0">
+        <text>flug</text>
+      </translation>
+      <translation id="1">
+        <text>flight</text>
+      </translation>
+    </entry>
+    <entry id="105">
+      <translation id="0">
+        <text>ubermensch</text>
+      </translation>
+      <translation id="1">
+        <text>superman</text>
+      </translation>
+    </entry>
+    <entry id="106">
+      <translation id="0">
+        <text>fisch</text>
+      </translation>
+      <translation id="1">
+        <text>fish</text>
+      </translation>
+    </entry>
+    <entry id="107">
+      <translation id="0">
+        <text>beschaftigt</text>
+      </translation>
+      <translation id="1">
+        <text>busy</text>
+      </translation>
+    </entry>
+    <entry id="108">
+      <translation id="0">
+        <text>vier</text>
+      </translation>
+      <translation id="1">
+        <text>four</text>
+      </translation>
+    </entry>
+    <entry id="109">
+      <translation id="0">
+        <text>vorsitz</text>
+      </translation>
+      <translation id="1">
+        <text>chair</text>
+      </translation>
+    </entry>
+    <entry id="110">
+      <translation id="0">
+        <text>leader</text>
+      </translation>
+      <translation id="1">
+        <text>fuhrer</text>
+      </translation>
+    </entry>
+    <entry id="111">
+      <translation id="0">
+        <text>king</text>
+      </translation>
+      <translation id="1">
+        <text>konig</text>
+      </translation>
+    </entry>
+    <entry id="112">
+      <translation id="0">
+        <text>freiheit</text>
+      </translation>
+      <translation id="1">
+        <text>liberty</text>
+      </translation>
+    </entry>
+    <entry id="113">
+      <translation id="0">
+        <text>demokratie</text>
+      </translation>
+      <translation id="1">
+        <text>democracy</text>
+      </translation>
+    </entry>
+    <entry id="114">
+      <translation id="0">
+        <text>brust</text>
+      </translation>
+      <translation id="1">
+        <text>breast</text>
+      </translation>
+    </entry>
+    <entry id="115">
+      <translation id="0">
+        <text>schwarz</text>
+      </translation>
+      <translation id="1">
+        <text>black</text>
+      </translation>
+    </entry>
+    <entry id="116">
+      <translation id="0">
+        <text>gitarre</text>
+      </translation>
+      <translation id="1">
+        <text>guitar</text>
+      </translation>
+    </entry>
+    <entry id="117">
+      <translation id="0">
+        <text>tur</text>
+      </translation>
+      <translation id="1">
+        <text>door</text>
+      </translation>
+    </entry>
+    <entry id="118">
+      <translation id="0">
+        <text>diamant</text>
+      </translation>
+      <translation id="1">
+        <text>diamond</text>
+      </translation>
+    </entry>
+    <entry id="119">
+      <translation id="0">
+        <text>dark</text>
+      </translation>
+      <translation id="1">
+        <text>dunkel</text>
+      </translation>
+    </entry>
+    <entry id="120">
+      <translation id="0">
+        <text>help</text>
+      </translation>
+      <translation id="1">
+        <text>hilfe</text>
+      </translation>
+    </entry>
+    <entry id="121">
+      <translation id="0">
+        <text>fenster</text>
+      </translation>
+      <translation id="1">
+        <text>window</text>
+      </translation>
+    </entry>
+    <entry id="122">
+      <translation id="0">
+        <text>tisch</text>
+      </translation>
+      <translation id="1">
+        <text>table</text>
+      </translation>
+    </entry>
+    <entry id="123">
+      <translation id="0">
+        <text>besitzt</text>
+      </translation>
+      <translation id="1">
+        <text>own</text>
+      </translation>
+    </entry>
+    <entry id="124">
+      <translation id="0">
+        <text>etwas</text>
+      </translation>
+      <translation id="1">
+        <text>some</text>
+      </translation>
+    </entry>
+    <entry id="125">
+      <translation id="0">
+        <text>danke</text>
+      </translation>
+      <translation id="1">
+        <text>thank</text>
+      </translation>
+    </entry>
+    <entry id="126">
+      <translation id="0">
+        <text>bier</text>
+      </translation>
+      <translation id="1">
+        <text>beer</text>
+      </translation>
+    </entry>
+    <entry id="127">
+      <translation id="0">
+        <text>backen</text>
+      </translation>
+      <translation id="1">
+        <text>to bake</text>
+      </translation>
+    </entry>
+    <entry id="128">
+      <translation id="0">
+        <text>binden</text>
+      </translation>
+      <translation id="1">
+        <text>to bind</text>
+      </translation>
+    </entry>
+    <entry id="129">
+      <translation id="0">
+        <text>feuer</text>
+      </translation>
+      <translation id="1">
+        <text>fire</text>
+      </translation>
+    </entry>
+    <entry id="130">
+      <translation id="0">
+        <text>fieber</text>
+      </translation>
+      <translation id="1">
+        <text>fever</text>
+      </translation>
+    </entry>
+    <entry id="131">
+      <translation id="0">
+        <text>zwist</text>
+      </translation>
+      <translation id="1">
+        <text>dispute</text>
+      </translation>
+    </entry>
+    <entry id="132">
+      <translation id="0">
+        <text>schafer</text>
+      </translation>
+      <translation id="1">
+        <text>shepherd</text>
+      </translation>
+    </entry>
+    <entry id="133">
+      <translation id="0">
+        <text>ruhm</text>
+      </translation>
+      <translation id="1">
+        <text>glory</text>
+      </translation>
+    </entry>
+    <entry id="134">
+      <translation id="0">
+        <text>hund</text>
+      </translation>
+      <translation id="1">
+        <text>dog</text>
+      </translation>
+    </entry>
+    <entry id="135">
+      <translation id="0">
+        <text>friede</text>
+      </translation>
+      <translation id="1">
+        <text>peace</text>
+      </translation>
+    </entry>
+    <entry id="136">
+      <translation id="0">
+        <text>kirsche</text>
+      </translation>
+      <translation id="1">
+        <text>cherry</text>
+      </translation>
+    </entry>
+    <entry id="137">
+      <translation id="0">
+        <text>hosen</text>
+      </translation>
+      <translation id="1">
+        <text>pants</text>
+      </translation>
+    </entry>
+    <entry id="138">
+      <translation id="0">
+        <text>mantel</text>
+      </translation>
+      <translation id="1">
+        <text>jacket</text>
+      </translation>
+    </entry>
+    <entry id="139">
+      <translation id="0">
+        <text>langsam</text>
+      </translation>
+      <translation id="1">
+        <text>slow</text>
+      </translation>
+    </entry>
+    <entry id="140">
+      <translation id="0">
+        <text>weber</text>
+      </translation>
+      <translation id="1">
+        <text>weaver</text>
+      </translation>
+    </entry>
+    <entry id="141">
+      <translation id="0">
+        <text>kleid</text>
+      </translation>
+      <translation id="1">
+        <text>dress</text>
+      </translation>
+    </entry>
+    <entry id="142">
+      <translation id="0">
+        <text>wirtschaft</text>
+      </translation>
+      <translation id="1">
+        <text>economy</text>
+      </translation>
+    </entry>
+    <entry id="143">
+      <translation id="0">
+        <text>witz</text>
+      </translation>
+      <translation id="1">
+        <text>joke</text>
+      </translation>
+    </entry>
+    <entry id="144">
+      <translation id="0">
+        <text>zahlen</text>
+      </translation>
+      <translation id="1">
+        <text>to pay</text>
+      </translation>
+    </entry>
+    <entry id="145">
+      <translation id="0">
+        <text>schlaf</text>
+      </translation>
+      <translation id="1">
+        <text>sleep</text>
+      </translation>
+    </entry>
+    <entry id="146">
+      <translation id="0">
+        <text>schnaps</text>
+      </translation>
+      <translation id="1">
+        <text>brandy</text>
+      </translation>
+    </entry>
+    <entry id="147">
+      <translation id="0">
+        <text>eis</text>
+      </translation>
+      <translation id="1">
+        <text>ice</text>
+      </translation>
+    </entry>
+    <entry id="148">
+      <translation id="0">
+        <text>volk</text>
+      </translation>
+      <translation id="1">
+        <text>people</text>
+      </translation>
+    </entry>
+    <entry id="149">
+      <translation id="0">
+        <text>offen</text>
+      </translation>
+      <translation id="1">
+        <text>open</text>
+      </translation>
+    </entry>
+    <entry id="150">
+      <translation id="0">
+        <text>schritt</text>
+      </translation>
+      <translation id="1">
+        <text>step</text>
+      </translation>
+    </entry>
+    <entry id="151">
+      <translation id="0">
+        <text>wird</text>
+      </translation>
+      <translation id="1">
+        <text>becomes</text>
+      </translation>
+    </entry>
+    <entry id="152">
+      <translation id="0">
+        <text>wohin</text>
+      </translation>
+      <translation id="1">
+        <text>where</text>
+      </translation>
+    </entry>
+    <entry id="153">
+      <translation id="0">
+        <text>leben</text>
+      </translation>
+      <translation id="1">
+        <text>living</text>
+      </translation>
+    </entry>
+    <entry id="154">
+      <translation id="0">
+        <text>sauer</text>
+      </translation>
+      <translation id="1">
+        <text>sour</text>
+      </translation>
+    </entry>
+    <entry id="155">
+      <translation id="0">
+        <text>schrift</text>
+      </translation>
+      <translation id="1">
+        <text>write</text>
+      </translation>
+    </entry>
+    <entry id="156">
+      <translation id="0">
+        <text>schuh</text>
+      </translation>
+      <translation id="1">
+        <text>shoe</text>
+      </translation>
+    </entry>
+    <entry id="157">
+      <translation id="0">
+        <text>vater</text>
+      </translation>
+      <translation id="1">
+        <text>father</text>
+      </translation>
+    </entry>
+    <entry id="158">
+      <translation id="0">
+        <text>hochzeit</text>
+      </translation>
+      <translation id="1">
+        <text>wedding</text>
+      </translation>
+    </entry>
+    <entry id="159">
+      <translation id="0">
+        <text>gehört</text>
+      </translation>
+      <translation id="1">
+        <text>belongs to</text>
+      </translation>
+    </entry>
+    <entry id="160">
+      <translation id="0">
+        <text>werkzeuge</text>
+      </translation>
+      <translation id="1">
+        <text>tools</text>
+      </translation>
+    </entry>
+    <entry id="161">
+      <translation id="0">
+        <text>zahnpasta</text>
+      </translation>
+      <translation id="1">
+        <text>toothpaste</text>
+      </translation>
+    </entry>
+    <entry id="162">
+      <translation id="0">
+        <text>gewöhnlich</text>
+      </translation>
+      <translation id="1">
+        <text>normally</text>
+      </translation>
+    </entry>
+    <entry id="163">
+      <translation id="0">
+        <text>mitglied</text>
+      </translation>
+      <translation id="1">
+        <text>member</text>
+      </translation>
+    </entry>
+    <entry id="164">
+      <translation id="0">
+        <text>hersteller</text>
+      </translation>
+      <translation id="1">
+        <text>producer</text>
+      </translation>
+    </entry>
+    <entry id="165">
+      <translation id="0">
+        <text>herren</text>
+      </translation>
+      <translation id="1">
+        <text>gentlemen</text>
+      </translation>
+    </entry>
+    <entry id="166">
+      <translation id="0">
+        <text>niemals</text>
+      </translation>
+      <translation id="1">
+        <text>never</text>
+      </translation>
+    </entry>
+    <entry id="167">
+      <translation id="0">
+        <text>tasse</text>
+      </translation>
+      <translation id="1">
+        <text>cup</text>
+      </translation>
+    </entry>
+    <entry id="168">
+      <translation id="0">
+        <text>regenschirm</text>
+      </translation>
+      <translation id="1">
+        <text>umbrella</text>
+      </translation>
+    </entry>
+    <entry id="169">
+      <translation id="0">
+        <text>geschlecht</text>
+      </translation>
+      <translation id="1">
+        <text>generation</text>
+      </translation>
+    </entry>
+    <entry id="170">
+      <translation id="0">
+        <text>strafen</text>
+      </translation>
+      <translation id="1">
+        <text>to punish</text>
+      </translation>
+    </entry>
+  </entries>
+  <lessons>
+    <container>
+      <name>Default Lesson</name>
+      <inpractice>true</inpractice>
+      <entry id="0"/>
+      <entry id="1"/>
+      <entry id="2"/>
+      <entry id="3"/>
+      <entry id="4"/>
+      <entry id="5"/>
+      <entry id="6"/>
+      <entry id="7"/>
+      <entry id="8"/>
+      <entry id="9"/>
+      <entry id="10"/>
+      <entry id="11"/>
+      <entry id="12"/>
+      <entry id="13"/>
+      <entry id="14"/>
+      <entry id="15"/>
+      <entry id="16"/>
+      <entry id="17"/>
+      <entry id="18"/>
+      <entry id="19"/>
+      <entry id="20"/>
+      <entry id="21"/>
+      <entry id="22"/>
+      <entry id="23"/>
+      <entry id="24"/>
+      <entry id="25"/>
+      <entry id="26"/>
+      <entry id="27"/>
+      <entry id="28"/>
+      <entry id="29"/>
+      <entry id="30"/>
+      <entry id="31"/>
+      <entry id="32"/>
+      <entry id="33"/>
+      <entry id="34"/>
+      <entry id="35"/>
+      <entry id="36"/>
+      <entry id="37"/>
+      <entry id="38"/>
+      <entry id="39"/>
+      <entry id="40"/>
+      <entry id="41"/>
+      <entry id="42"/>
+      <entry id="43"/>
+      <entry id="44"/>
+      <entry id="45"/>
+      <entry id="46"/>
+      <entry id="47"/>
+      <entry id="48"/>
+      <entry id="49"/>
+      <entry id="50"/>
+      <entry id="51"/>
+      <entry id="52"/>
+      <entry id="53"/>
+      <entry id="54"/>
+      <entry id="55"/>
+      <entry id="56"/>
+      <entry id="57"/>
+      <entry id="58"/>
+      <entry id="59"/>
+      <entry id="60"/>
+      <entry id="61"/>
+      <entry id="62"/>
+      <entry id="63"/>
+      <entry id="64"/>
+      <entry id="65"/>
+      <entry id="66"/>
+      <entry id="67"/>
+      <entry id="68"/>
+      <entry id="69"/>
+      <entry id="70"/>
+      <entry id="71"/>
+      <entry id="72"/>
+      <entry id="73"/>
+      <entry id="74"/>
+      <entry id="75"/>
+      <entry id="76"/>
+      <entry id="77"/>
+      <entry id="78"/>
+      <entry id="79"/>
+      <entry id="80"/>
+      <entry id="81"/>
+      <entry id="82"/>
+      <entry id="83"/>
+      <entry id="84"/>
+      <entry id="85"/>
+      <entry id="86"/>
+      <entry id="87"/>
+      <entry id="88"/>
+      <entry id="89"/>
+      <entry id="90"/>
+      <entry id="91"/>
+      <entry id="92"/>
+      <entry id="93"/>
+      <entry id="94"/>
+      <entry id="95"/>
+      <entry id="96"/>
+      <entry id="97"/>
+      <entry id="98"/>
+      <entry id="99"/>
+      <entry id="100"/>
+      <entry id="101"/>
+      <entry id="102"/>
+      <entry id="103"/>
+      <entry id="104"/>
+      <entry id="105"/>
+      <entry id="106"/>
+      <entry id="107"/>
+      <entry id="108"/>
+      <entry id="109"/>
+      <entry id="110"/>
+      <entry id="111"/>
+      <entry id="112"/>
+      <entry id="113"/>
+      <entry id="114"/>
+      <entry id="115"/>
+      <entry id="116"/>
+      <entry id="117"/>
+      <entry id="118"/>
+      <entry id="119"/>
+      <entry id="120"/>
+      <entry id="121"/>
+      <entry id="122"/>
+      <entry id="123"/>
+      <entry id="124"/>
+      <entry id="125"/>
+      <entry id="126"/>
+      <entry id="127"/>
+      <entry id="128"/>
+      <entry id="129"/>
+      <entry id="130"/>
+      <entry id="131"/>
+      <entry id="132"/>
+      <entry id="133"/>
+      <entry id="134"/>
+      <entry id="135"/>
+      <entry id="136"/>
+      <entry id="137"/>
+      <entry id="138"/>
+      <entry id="139"/>
+      <entry id="140"/>
+      <entry id="141"/>
+      <entry id="142"/>
+      <entry id="143"/>
+      <entry id="144"/>
+      <entry id="145"/>
+      <entry id="146"/>
+      <entry id="147"/>
+      <entry id="148"/>
+      <entry id="149"/>
+      <entry id="150"/>
+      <entry id="151"/>
+      <entry id="152"/>
+      <entry id="153"/>
+      <entry id="154"/>
+      <entry id="155"/>
+      <entry id="156"/>
+      <entry id="157"/>
+      <entry id="158"/>
+      <entry id="159"/>
+      <entry id="160"/>
+      <entry id="161"/>
+      <entry id="162"/>
+      <entry id="163"/>
+      <entry id="164"/>
+      <entry id="165"/>
+      <entry id="166"/>
+      <entry id="167"/>
+      <entry id="168"/>
+      <entry id="169"/>
+      <entry id="170"/>
+    </container>
+  </lessons>
+</kvtml>
