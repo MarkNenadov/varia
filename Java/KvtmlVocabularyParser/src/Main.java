@@ -21,8 +21,7 @@
  *
  */
 
-package com.pythonbyte;
-
+import com.pythonbyte.util.parser.KvtmlVocabularyParser;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
@@ -41,13 +40,8 @@ public class Main {
 
             KvtmlVocabularyParser parser = new KvtmlVocabularyParser( document );
             parser.getVocabularyEntries().forEach( System.out::println );
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (ParserConfigurationException | SAXException | IOException e) {
             e.printStackTrace();
         }
     }
-
 }

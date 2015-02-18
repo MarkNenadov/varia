@@ -21,7 +21,7 @@
  *
  */
 
-package com.pythonbyte;
+package com.pythonbyte.domain;
 
 public class VocabularyEntry {
     private String word = "";

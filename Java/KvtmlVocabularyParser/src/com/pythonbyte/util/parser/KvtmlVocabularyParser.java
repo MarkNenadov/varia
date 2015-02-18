@@ -21,8 +21,9 @@
  *
  */
 
-package com.pythonbyte;
+package com.pythonbyte.util.parser;
 
+import com.pythonbyte.domain.VocabularyEntry;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
